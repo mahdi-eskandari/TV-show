@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(35, 35, 36);
+}
+
+#header {
+    width: 880px;
+    height: 80px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.ch_header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(35, 35, 36);
+
+}
+
+.p_aconPlay {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(72, 231, 197);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_aconPlay svg {
+    width: 30px;
+    background-color: rgb(72, 231, 197);
+    color: white;
+}
+
+.left {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 10px;
+
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-right: 10px;
+}
+
+.tv {
+    color: rgb(72, 231, 197);
+}
+
+input {
+    border-radius: 50px;
+    padding: 5px 12px;
+    width: 200px;
+    background-color: rgb(53, 52, 59);
+    border: 1px solid rgb(53, 52, 59);
+}
+
+.p_search {
+    position: relative;
+    display: inline-block;
+}
+
+.p_search svg {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+@media (max-width: 628px) {
+    .ch_header {
+        flex-wrap: wrap;
+    }
+
+    input {
+        width: 130px;
+    }
+}
+
+
+.img1 {
+    width: 880px;
+    margin-left: 50px;
+}
+
+.img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.titre_1 {
+    margin-top: 22px;
+    width: 880px;
+
+    height: 40px;
+    background-color: rgb(62, 60, 65);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+
+.titre_1 h3 {
+    padding-left: 10px;
+    color: white;
+}
+
+#p_navbar {
+    position: fixed;
+    width: 70px;
+    height: 300px;
+    left: 20px;
+    bottom: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+    font-size: 24px;
+    color: white;
+}
+
+
+.matn_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.matn_icon p {
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+
+
+#container_movie {
+    width: 880px;
+    height: auto;
+    margin-top: 16px;
+    background-color: rgb(35, 35, 36);
+    padding: 10px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13px;
+    position: relative;
+}
+
+
+.section_card {
+    width: 205px;
+    height: auto;
+    /* background-color: rgb(138, 133, 133); */
+    background-color: red;
+    position: relative;
+}
+
+.p_card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transition: 0.5s;
+    background-color: rgb(80, 78, 99);
+
+}
+
+.p_card:hover {
+    transform: scale(0.95);
+}
+
+
+/*   اینکه یه سایه بندازم روی کارد ها رو از گوگل درآوردم   */
+.p_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.p_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p_text_card {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.name_movie {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.Genre_movie {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.p_text_card {
+    padding: 3px;
+}
+
+/* .score_movie {
+    font-size: 8px;
+    opacity: 0.8;
+} */
+
+#con_footer {
+    width: 880px;
+    height: 50px;
+    /* background-color: rgb(48, 47, 49); */
+    margin-left: 50px;
+    margin-top: 35px;
+    /* margin-bottom: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer i {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer i:hover {
+    transform: scale(1.05);
+}
+
+
+
+.p_card2 {
+    width: 100%;
+    height: 300px;
+    transition: 0.5s;
+    background-color: rgb(44, 44, 46);
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    /* justify-content: space-between; */
+    gap: 20px;
+    /* position: relative; */
+
+}
+
+.p_text_card2 {
+    /* background-color: red; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.p_img_card2 {
+    background-color: red;
+    height: 65%;
+}
+
+.img_card2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.name_movie2 {
+    font-size: 15px;
+    opacity: 0.8;
+    margin-left: 10px;
+}
+
+.parent_iconPlay_episodes {
+    /* width: 100%; */
+    /* height: 30px; */
+    /* display: flex;
+    justify-content: end;
+    align-items: center; */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.ch_parent_iconPlay_episodes {
+    background-color: rgb(62, 202, 125);
+    height: 29px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.ch_parent_iconPlay_episodes svg {
+    color: white;
+}
+
+
+.kholase1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(63, 62, 62);
+    width: 130px;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.kholase1 p {
+    font-size: 13px;
+}
+
+#Drop-down-list {
+    color: white;
+    background-color: rgb(51, 51, 51);
+    border-radius: 20px;
+    padding: 5px;
+    width: 150px;
+}
+
+#Drop-down-list option {
+    font-size: 12px;
+}
